@@ -101,8 +101,6 @@ jobs:
       run: |
         kubectl apply -f k8s/
         kubectl rollout status deployment/calculator-app --timeout=300s
-      uses: actions/upload-artifact@v4
-      with:
-        name: code-coverage-report
-        path: output/test/code-coverage.html
-    
+      
+      
+      
